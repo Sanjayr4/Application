@@ -3,10 +3,10 @@ name: Software Version Checker
 on:
   schedule:
     # Runs every Monday at 09:00 UTC
-    - cron: "0 9 * * 1"
+    - cron: "7 6 * * 2"
 
     # Runs every Thursday at 09:00 UTC
-    - cron: "0 9 * * 4"
+    - cron: "7 6 * * 4"
 
   # Allows you to run it manually from GitHub
   workflow_dispatch:
