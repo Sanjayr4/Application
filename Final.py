@@ -341,6 +341,26 @@ current_time = datetime.now().strftime(
 # PROCESS EVERY APPLICATION
 # ============================================================
 
+worksheet.append_row([
+    datetime.now().strftime("%A, %d-%m-%Y")
+])
+
+row_number = len(worksheet.get_all_values())
+
+worksheet.format(
+    f"A{row_number}:D{row_number}",
+    {
+        "backgroundColor": {
+            "red": 0.8,
+            "green": 0.8,
+            "blue": 0.8
+        },
+        "textFormat": {
+            "bold": True
+        }
+    }
+)
+
 for application, url in WEBSITE_URLS.items():
 
     print("\n" + "=" * 70)
@@ -451,7 +471,6 @@ for application, url in WEBSITE_URLS.items():
 
 
     worksheet.append_row([
-        datetime.now().strftime("%A"),
         application,
         result,
         url,
