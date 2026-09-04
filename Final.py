@@ -104,7 +104,7 @@ Rules:
 
 Return ONLY Version:
 
-Version
+ Version
 
 Example:
 
@@ -446,6 +446,12 @@ for application, url in WEBSITE_URLS.items():
     # --------------------------------------------------------
 
     worksheet.append_row([
+    datetime.now().strftime("%A, %d-%m-%Y")
+])
+
+
+    worksheet.append_row([
+        datetime.now().strftime("%A"),
         application,
         result,
         url,
