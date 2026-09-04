@@ -102,13 +102,13 @@ Rules:
 7. If the version cannot be determined from the website,
    return UNKNOWN.
 
-Return ONLY this format:
+Return ONLY Version:
 
-Application Name - Version
+Version
 
 Example:
 
-Adobe Photoshop x64 - 27.0.1
+27.0.1
 
 Do not provide explanations.
 Do not provide additional text.
