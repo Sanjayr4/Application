@@ -3,7 +3,7 @@ name: Software Version Checker
 on:
   schedule:
     # Runs every Monday at 09:00 UTC
-    - cron: "7 6 * * 2"
+    - cron: "7 6 * * 1"
 
     # Runs every Thursday at 09:00 UTC
     - cron: "7 6 * * 4"
